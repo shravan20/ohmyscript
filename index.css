@@ -1,50 +1,73 @@
-/* Color Theme Swatches in Hex */
-.PALETTE-mini-07:-monotone-1-hex {
-  color: #040fd9;
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
 }
-.PALETTE-mini-07:-monotone-2-hex {
-  color: #040dbf;
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
 }
-.PALETTE-mini-07:-monotone-3-hex {
-  color: #021e73;
-}
-.PALETTE-mini-07:-monotone-4-hex {
-  color: #0339a6;
-}
-.PALETTE-mini-07:-monotone-5-hex {
-  color: #4e8ad9;
-}
-
-/* Color Theme Swatches in RGBA */
-.PALETTE-mini-07:-monotone-1-rgba {
-  color: rgba(4, 14, 216, 1);
-}
-.PALETTE-mini-07:-monotone-2-rgba {
-  color: rgba(3, 13, 191, 1);
-}
-.PALETTE-mini-07:-monotone-3-rgba {
-  color: rgba(2, 30, 114, 1);
-}
-.PALETTE-mini-07:-monotone-4-rgba {
-  color: rgba(3, 57, 165, 1);
-}
-.PALETTE-mini-07:-monotone-5-rgba {
-  color: rgba(78, 138, 216, 1);
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-/* Color Theme Swatches in HSLA */
-.PALETTE-mini-07:-monotone-1-hsla {
-  color: hsla(236, 96, 43, 1);
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
 }
-.PALETTE-mini-07:-monotone-2-hsla {
-  color: hsla(236, 96, 38, 1);
+
+h1,
+h2,
+h3 {
+  margin: 10px;
 }
-.PALETTE-mini-07:-monotone-3-hsla {
-  color: hsla(225, 96, 22, 1);
+
+a {
+  color: var(--magenta);
+  text-decoration: none;
 }
-.PALETTE-mini-07:-monotone-4-hsla {
-  color: hsla(219, 96, 33, 1);
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
 }
-.PALETTE-mini-07:-monotone-5-hsla {
-  color: hsla(213, 64, 57, 1);
+
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
 }
